@@ -4,57 +4,13 @@
       "id": "1",
       "email": "john@gmail.com",
       "username": "johnd",
-      "password": "m38rmF$",
-      "name": {
-        "firstname": "john",
-        "lastname": "doe"
-      },
-      "phone": "1-570-236-7033",
-      "__v": 0
+      "password": "m38rmF$"
     },
     {
-      "id": "338e",
-      "email": "john@gmail.com",
-      "username": "johnd",
-      "password": "m38rmF$",
-      "name": {
-        "firstname": "john",
-        "lastname": "doe"
-      },
-      "phone": "1-570-236-7033"
-    },
-    {
-      "id": "5b26",
-      "email": "john@gmail.com",
-      "username": "johnd",
-      "password": "m38rmF$",
-      "name": {
-        "firstname": "john",
-        "lastname": "doe"
-      },
-      "phone": "1-570-236-7033"
-    },
-    {
-      "id": "f52b",
-      "email": "john@gmail.com",
-      "username": "johnd",
-      "password": "m38rmF$",
-      "name": {
-        "firstname": "john",
-        "lastname": "doe"
-      },
-      "phone": "1-570-236-7033"
-    },
-    {
-      "id": "6f51",
-      "email": "john@gmail.com",
-      "username": "johnd",
-      "password": "m38rmF$",
-      "name": {
-        "firstname": "john",
-        "lastname": "doe"
-      },
-      "phone": "1-570-236-7033"
+      "id": "8034",
+      "name": "Shubham Kumar",
+      "email": "shubham@gmail.com",
+      "password": "12345678"
     }
   ]
 }
