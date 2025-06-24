@@ -23,6 +23,7 @@ export const loginAction = (user)=> async (dispatch)=>{
         console.log('login response --,', res)
 
         localStorage.setItem('user', JSON.stringify(res.data[0]))
+        dispatch(currentUserAction())
 
     } catch (error) {
         console.log(error.message)

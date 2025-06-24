@@ -3,28 +3,29 @@ import { useDispatch, useSelector } from 'react-redux'
 import { decrementBy1, incrementBy1, incrementByAmmount } from './features/reducers/counterSlice';
 import { currentUserAction, loginAction, registerAction } from './features/actions/userAction';
 import { useForm } from 'react-hook-form'
+import AppRouter from './components/AppRouter';
 
 const App = () => {
-  // const [amt, setAmt] = useState(0)
-  // const count = useSelector((state)=>state.counter.value);
-  // const dispatch = useDispatch()
+  // // const [amt, setAmt] = useState(0)
+  // // const count = useSelector((state)=>state.counter.value);
+  const dispatch = useDispatch()
 
-  // const handleRegister = () => {
-  //   dispatch(registerAction(user));
-  // };
+  // // const handleRegister = () => {
+  // //   dispatch(registerAction(user));
+  // // };
 
-  const {register, handleSubmit, reset} = useForm();
-  const dispatch = useDispatch();
-  // console.log(register);
+  // const {register, handleSubmit, reset} = useForm();
+  // const dispatch = useDispatch();
+  // // console.log(register);
 
-  const formSubmit = (data)=>{
-    console.log(data);
-    // dispatch(registerAction(data))
-    // alert("user registered successfully")
-    dispatch(loginAction(data))
-    alert('confirm user is Logged in ')
-    reset();
-  }
+  // const formSubmit = (data)=>{
+  //   console.log(data);
+  //   // dispatch(registerAction(data))
+  //   // alert("user registered successfully")
+  //   dispatch(loginAction(data))
+  //   alert('confirm user is Logged in ')
+  //   reset();
+  // }
 
   useEffect(() => {
     dispatch(currentUserAction());
@@ -54,13 +55,13 @@ const App = () => {
       <button onClick={handleRegister}>Register User</button> */}
 
 
-      <h1>Hello From App</h1>
-      <form
+      {/* <h1>Hello From App</h1> */}
+      {/* <form
       onSubmit={handleSubmit(formSubmit)}
       >
-        {/* <input 
+        <input 
         {...register('name')}
-        type="text" placeholder='Username' /> */}
+        type="text" placeholder='Username' />
         <input 
         {...register('email')}
         type="email" placeholder='Email' />
@@ -68,7 +69,12 @@ const App = () => {
         {...register('password')}
         type="paasword" placeholder='******' />
         <button type='submit'>submit</button>
-      </form>
+      </form> */}
+
+
+        <AppRouter />
+
+
     </div>
   )
 }
